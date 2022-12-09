@@ -1,0 +1,18 @@
+syntax = "proto3";
+package comment;
+option go_package = ".;comment";
+service CommentService {
+  rpc CreateComment(CreateCommentRequest) returns (CreateCommentResponse);
+}
+message Comment {
+  int64 id = 1;
+  int64 author_id = 2 ;
+  int64 blog_id =3;
+  string content =4;
+}
+message CreateCommentRequest {
+  Comment comment = 1 ;
+}
+message CreateCommentResponse {
+  Comment comment = 1 ;
+}

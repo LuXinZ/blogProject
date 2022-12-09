@@ -1,4 +1,4 @@
-package blogServer
+package blogApp
 
 import (
 	"github.com/gin-gonic/gin"
