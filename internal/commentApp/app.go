@@ -32,8 +32,8 @@ func InitRpcToComment() (comment.CommentServiceClient, context.Context) {
 }
 func SendRpcToComment(newComment *comment.Comment) {
 
-	_, err = c.CreateComment(ctx, &comment.CreateCommentRequest{Comment: newComment})
-	if err != nil {
-		log.Fatalf("could not greet: %v", err)
-	}
+	//_, err = c.CreateComment(ctx, &comment.CreateCommentRequest{Comment: newComment})
+	//if err != nil {
+	//	log.Fatalf("could not greet: %v", err)
+	//}
 }
